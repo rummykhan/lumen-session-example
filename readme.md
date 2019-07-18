@@ -99,6 +99,8 @@ You can clone this project using
 
 git clone git@github.com:rummykhan/lumen-session-example.git 
 
+cp .env.example .env
+
 composer install
 
 php  artisan serve
