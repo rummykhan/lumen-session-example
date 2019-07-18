@@ -25,7 +25,7 @@ $app->middleware([
 ]);
 ```
 
-Purpose of the above step is to tell laravel to start session on every request and before serving response persist the session.
+Purpose of adding the above middleware is to start session on every request and save session before serving response.
 
 
 **Step - 3**
