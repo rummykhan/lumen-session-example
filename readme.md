@@ -19,9 +19,11 @@ install `illuminate/session` using
 
 Now goto `bootstrap/app.php` and add this middleware
 
-    $app->middleware([
-        \Illuminate\Session\Middleware\StartSession::class,
-    ]);
+```php
+$app->middleware([
+    \Illuminate\Session\Middleware\StartSession::class,
+]);
+```
 
 Purpose of the above step is to tell laravel to start session on every request and before serving response persist the session.
 
@@ -40,7 +42,7 @@ mkdir -p storage/framework/sessions
 
 ```
 
-Thanks to [DayDream](https://stackoverflow.com/users/8128433/daydream)
+Thanks to [DayDream](https://stackoverflow.com/a/50080632/2190807)
 
 **Step - 5**
 
@@ -60,8 +62,8 @@ Thanks to [@xxRockOnxx](https://laracasts.com/@xxRockOnxx) for finding `loadComp
 It takes 3 arguments, 
 
 * first one is `config` file name. (file should be present in `config/` directory)
-* second is  Provider name
-* third is what this method should return
+* second is ServiceProvider FQN
+* third is return of this method.
 
 `loadComponent` just calls the `$app->register` and inject `$app` while building the `ServiceProvider`
 
