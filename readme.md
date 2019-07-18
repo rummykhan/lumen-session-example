@@ -1,5 +1,4 @@
 # Lumen Session Example
---
 
 ###### Example of 
 [https://stackoverflow.com/questions/47050984/enabling-session-in-lumen-framework/47055083#47055083](https://stackoverflow.com/questions/47050984/enabling-session-in-lumen-framework/47055083#47055083)
