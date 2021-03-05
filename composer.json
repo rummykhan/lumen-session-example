@@ -6,8 +6,8 @@
     "type": "project",
     "require": {
         "php": ">=7.1.3",
-        "illuminate/session": "^5.8",
-        "laravel/lumen-framework": "5.8.*"
+        "illuminate/session": "^6.0",
+        "laravel/lumen-framework": "^6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.4",
