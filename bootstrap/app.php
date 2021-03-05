@@ -80,6 +80,8 @@ $app->singleton(
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 
+$app->register(Illuminate\Database\Eloquent\LegacyFactoryServiceProvider::class);
+
 $app->middleware([
     \Illuminate\Session\Middleware\StartSession::class,
 ]);
