@@ -16,6 +16,7 @@ $router->get('/', function (\Illuminate\Http\Request $request) {
     $request->session()->put('name', 'Lumen-Session');
 
     return response()->json([
+        'message' => 'Setting session value to \'Lumen-Session\' for key \'session.name\'',
         'session.name' => $request->session()->get('name')
     ]);
 });
@@ -23,6 +24,7 @@ $router->get('/', function (\Illuminate\Http\Request $request) {
 $router->get('/session', function (\Illuminate\Http\Request $request) {
 
     return response()->json([
+        'message' => 'Getting value from session with key \'session.name\'',
         'session.name' => $request->session()->get('name'),
     ]);
 });
