@@ -3,6 +3,10 @@
 ###### Example of 
 [https://stackoverflow.com/questions/47050984/enabling-session-in-lumen-framework/47055083#47055083](https://stackoverflow.com/questions/47050984/enabling-session-in-lumen-framework/47055083#47055083)
 
+#### Note
+
+I've updated this repo to support to all lumen version starting from 5.6 to 8.0. All versions are in their corresponding branches whereas master branch correspond to `laravel/lumen-framework 8.0`.
+
 ####  How-To
 
 Laravel has officially stopped supporting sessions & views in `laravel/lumen` framework from version 5.2 and on wards.
